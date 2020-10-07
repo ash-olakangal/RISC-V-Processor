@@ -1,0 +1,71 @@
+$date
+	Wed Oct 07 17:39:03 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module stimulus $end
+$var wire 1 ! ZERO $end
+$var wire 32 " ALUResult [31:0] $end
+$var reg 32 # A [31:0] $end
+$var reg 4 $ ALUControl [3:0] $end
+$var reg 32 % B [31:0] $end
+$scope module test_mod $end
+$var wire 4 & alu_control [3:0] $end
+$var wire 32 ' in1 [31:0] $end
+$var wire 32 ( in2 [31:0] $end
+$var reg 32 ) alu_result [31:0] $end
+$var reg 1 ! zero_flag $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 )
+b101010 (
+b10111 '
+b0 &
+b101010 %
+b0 $
+b10111 #
+b10 "
+0!
+$end
+#20
+b111111 "
+b111111 )
+b1 $
+b1 &
+#40
+b1000001 "
+b1000001 )
+b10 $
+b10 &
+#60
+b11111111111111111111111111101101 "
+b11111111111111111111111111101101 )
+b100 $
+b100 &
+#80
+b1 "
+b1 )
+b1000 $
+b1000 &
+#100
+1!
+b0 "
+b0 )
+b10111 %
+b10111 (
+b101010 #
+b101010 '
+#120
+0!
+b10011 "
+b10011 )
+b100 $
+b100 &
+#150
