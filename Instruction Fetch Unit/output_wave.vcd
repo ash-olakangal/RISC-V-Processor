@@ -1,0 +1,51 @@
+$date
+	Thu Oct 08 14:58:10 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module stimulus $end
+$var wire 32 ! INST_CODE [31:0] $end
+$var reg 32 " PC [31:0] $end
+$var reg 1 # RESET $end
+$scope module test_mod $end
+$var wire 32 $ PC [31:0] $end
+$var wire 1 # reset $end
+$var wire 32 % Instruction_Code [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+bx $
+0#
+bx "
+bx !
+$end
+#20
+1#
+#40
+b100101000000001100110011 !
+b100101000000001100110011 %
+b0 "
+b0 $
+#60
+b1000001001110010000001110110011 !
+b1000001001110010000001110110011 %
+b100 "
+b100 $
+#80
+b11010110100000001010110011 !
+b11010110100000001010110011 %
+b1000 "
+b1000 $
+#100
+b11011110110100111000110011 !
+b11011110110100111000110011 %
+b1100 "
+b1100 $
+#150
