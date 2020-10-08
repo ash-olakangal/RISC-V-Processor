@@ -1,2 +1,2 @@
 # RISC-V-Processor
-32-bit implementation of RISC-V processor in verilog
+Verilog implementation of 32-bit RISC-V processor
