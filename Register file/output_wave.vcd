@@ -1,0 +1,122 @@
+$date
+	Sat Oct 24 06:48:58 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module stimulus $end
+$var wire 32 ! read_data2 [31:0] $end
+$var wire 32 " read_data1 [31:0] $end
+$var reg 1 # clock $end
+$var reg 5 $ read_reg_num1 [4:0] $end
+$var reg 5 % read_reg_num2 [4:0] $end
+$var reg 1 & regwrite $end
+$var reg 1 ' reset $end
+$var reg 32 ( write_data [31:0] $end
+$var reg 5 ) write_reg [4:0] $end
+$scope module test_module $end
+$var wire 1 # clock $end
+$var wire 32 * read_data1 [31:0] $end
+$var wire 32 + read_data2 [31:0] $end
+$var wire 5 , read_reg_num1 [4:0] $end
+$var wire 5 - read_reg_num2 [4:0] $end
+$var wire 1 & regwrite $end
+$var wire 1 ' reset $end
+$var wire 32 . write_data [31:0] $end
+$var wire 5 / write_reg [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+1'
+0&
+bx %
+bx $
+0#
+bx "
+bx !
+$end
+#10
+b10100 !
+b10100 +
+b0 %
+b0 -
+b10100 "
+b10100 *
+b0 $
+b0 ,
+1#
+b0 )
+b0 /
+b10100 (
+b10100 .
+1&
+0'
+#20
+b1 !
+b1 +
+b1 %
+b1 -
+0#
+b1 )
+b1 /
+b11110 (
+b11110 .
+#30
+b11110 !
+b11110 +
+1#
+#40
+b10 !
+b10 +
+b10 %
+b10 -
+b11110 "
+b11110 *
+b1 $
+b1 ,
+0#
+#50
+1#
+#60
+0#
+#70
+1#
+#80
+0#
+#90
+1#
+#100
+0#
+#110
+1#
+#120
+0#
+#130
+1#
+#140
+0#
+#150
+1#
+#160
+0#
+#170
+1#
+#180
+0#
+#190
+1#
+#200
+0#
