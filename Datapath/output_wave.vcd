@@ -1,0 +1,165 @@
+$date
+	Sat Oct 24 21:41:05 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module stimulus $end
+$var wire 1 ! zero_flag $end
+$var reg 4 " alu_control [3:0] $end
+$var reg 1 # clock $end
+$var reg 5 $ read_reg_num1 [4:0] $end
+$var reg 5 % read_reg_num2 [4:0] $end
+$var reg 1 & regwrite $end
+$var reg 1 ' reset $end
+$var reg 5 ( write_reg [4:0] $end
+$scope module test_module $end
+$var wire 4 ) alu_control [3:0] $end
+$var wire 1 # clock $end
+$var wire 5 * read_reg_num1 [4:0] $end
+$var wire 5 + read_reg_num2 [4:0] $end
+$var wire 1 & regwrite $end
+$var wire 1 ' reset $end
+$var wire 5 , write_reg [4:0] $end
+$var wire 1 ! zero_flag $end
+$var wire 32 - write_data [31:0] $end
+$var wire 32 . read_data2 [31:0] $end
+$var wire 32 / read_data1 [31:0] $end
+$scope module alu_module $end
+$var wire 4 0 alu_control [3:0] $end
+$var wire 32 1 in2 [31:0] $end
+$var wire 32 2 in1 [31:0] $end
+$var reg 32 3 alu_result [31:0] $end
+$var reg 1 ! zero_flag $end
+$upscope $end
+$scope module reg_file_module $end
+$var wire 1 # clock $end
+$var wire 32 4 read_data1 [31:0] $end
+$var wire 32 5 read_data2 [31:0] $end
+$var wire 5 6 read_reg_num1 [4:0] $end
+$var wire 5 7 read_reg_num2 [4:0] $end
+$var wire 1 & regwrite $end
+$var wire 1 ' reset $end
+$var wire 32 8 write_data [31:0] $end
+$var wire 5 9 write_reg [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+b10 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+b10 )
+bx (
+1'
+0&
+bx %
+bx $
+0#
+b10 "
+0!
+$end
+#10
+1#
+1&
+#20
+0#
+0'
+#25
+1!
+b0 -
+b0 3
+b0 8
+b0 .
+b0 1
+b0 5
+b0 %
+b0 +
+b0 7
+b0 /
+b0 2
+b0 4
+b0 $
+b0 *
+b0 6
+#30
+1#
+#40
+0#
+#45
+0!
+b1 -
+b1 3
+b1 8
+b1 .
+b1 1
+b1 5
+b1 %
+b1 +
+b1 7
+#50
+1#
+#60
+0#
+#70
+1#
+#80
+0#
+#85
+b11 -
+b11 3
+b11 8
+b10 .
+b10 1
+b10 5
+b10 %
+b10 +
+b10 7
+b1 /
+b1 2
+b1 4
+b1 $
+b1 *
+b1 6
+#90
+1#
+#100
+0#
+#110
+1#
+#120
+0#
+#130
+1#
+#140
+0#
+#150
+1#
+#160
+0#
+#170
+1#
+#180
+0#
+#190
+1#
+#200
+0#
