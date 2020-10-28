@@ -1,4 +1,4 @@
-`include "Instruction Fetch Unit.v"
+`include "IFU.v"
 module stimulus(
 
 );
@@ -6,7 +6,7 @@ module stimulus(
     wire [31:0] OUTPUT;
 
     // Initializing IFU module
-    Instruction_Fetch_Unit IFU(CLOCK,RESET,OUTPUT);
+    IFU IFU_module(CLOCK,RESET,OUTPUT);
 
     // Setting up waveform
     initial

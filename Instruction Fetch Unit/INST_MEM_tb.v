@@ -1,4 +1,4 @@
-`include "Instruction memory.v"
+`include "INST_MEM.v"
 
 module stimulus ();
     reg [31:0] PC;
@@ -6,12 +6,12 @@ module stimulus ();
     wire [31:0]INST_CODE;
 
     // Instantiating instruction memory module
-    Instruction_Memory test_mod(PC,RESET,INST_CODE);
+    INST_MEM INST_MEM_module(PC,RESET,INST_CODE);
 
     // Setting up waveform
     initial
     begin
-        $dumpfile("output_wave.vcd");
+        $dumpfile("INST_MEM_output_wave.vcd");
         $dumpvars(0,stimulus);
     end
 
