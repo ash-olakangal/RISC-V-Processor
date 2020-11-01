@@ -74,6 +74,13 @@ In this project we implement a 32-bit, RISC-V ISA based processor in verilog. Th
 
 <p align="center">
     <img src = "images/Processor.png">
+    <br>
+    </br>
+    <p>Output waveform using GTKWave:
+    </p>
+    <p align = "center">
+    <img src = "images/gtkwave_output.png" width="607" height="387">
+    </p>
 </p>
 
  
