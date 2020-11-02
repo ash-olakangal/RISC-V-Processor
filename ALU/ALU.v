@@ -12,6 +12,10 @@ ALU Control lines | Function
         0010	Add (A+B)
         0100	Subtract (A-B)
         1000	Set on less than
+        0011    Shift left logical
+        0101    Shift right logical
+        0110    Multiply
+        0111    Bitwise-XOR
 */
 
 module ALU (
@@ -34,7 +38,11 @@ module ALU (
             alu_result = 1;
             else
             alu_result = 0;
-        end 
+        end
+        4'b0011: alu_result = in1<<in2;
+        4'b0101: alu_result = in1>>in2;
+        4'b0110: alu_result = in1*in2;
+        4'b0111: alu_result = in1^in2;
 
         endcase
 

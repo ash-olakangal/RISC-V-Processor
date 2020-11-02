@@ -7,7 +7,7 @@ module stimulus ();
     wire [31:0] ALUResult;
 
     // Instantiating modules
-    ALU test_mod(.in1(A),.in2(B),.alu_control(ALUControl),.zero_flag(ZERO),.alu_result(ALUResult));
+    ALU ALU_module(.in1(A),.in2(B),.alu_control(ALUControl),.zero_flag(ZERO),.alu_result(ALUResult));
 
     // Setting up waveform
     initial
