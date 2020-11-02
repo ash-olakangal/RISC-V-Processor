@@ -1,7 +1,7 @@
-`include "./../Register file/Register File.v"
+`include "./../Register file/REG_FILE.v"
 `include "./../ALU/ALU.v"
 
-module Datapath (
+module DATAPATH(
     input [4:0]read_reg_num1,
     input [4:0]read_reg_num2,
     input [4:0]write_reg,
@@ -18,7 +18,7 @@ module Datapath (
     wire [31:0]write_data;
 
     // Instantiating the register file
-    Register_file reg_file_module(
+    REG_FILE reg_file_module(
     read_reg_num1,
     read_reg_num2,
     write_reg,
@@ -32,5 +32,5 @@ module Datapath (
 
     // Instanting ALU
     ALU alu_module(read_data1, read_data2, alu_control, write_data, zero_flag);
-
+	 
 endmodule

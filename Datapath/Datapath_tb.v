@@ -1,4 +1,4 @@
-`include "Datapath.v"
+`include "DATAPATH.v"
 
 module stimulus ();
 
@@ -10,7 +10,7 @@ module stimulus ();
     reg clock;
     reg reset;
 
-    Datapath test_module( 
+    DATAPATH DATAPATH_module( 
      read_reg_num1,
      read_reg_num2,
      write_reg,
