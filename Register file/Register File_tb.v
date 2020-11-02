@@ -1,4 +1,4 @@
-`include "Register File.v"
+`include "REG_FILE.v"
 
 module stimulus ();
     reg [4:0] read_reg_num1;
@@ -13,7 +13,7 @@ module stimulus ();
     
 
     // Instantiating register file module
-    Register_file test_module(
+    REG_FILE REG_FILE_module(
     read_reg_num1,
     read_reg_num2,
     write_reg,
