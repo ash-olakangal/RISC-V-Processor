@@ -1,0 +1,308 @@
+$date
+	Thu Oct 29 00:43:51 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module stimulus $end
+$var wire 1 ! zero $end
+$var reg 1 " clock $end
+$var reg 1 # reset $end
+$scope module test_processor $end
+$var wire 1 " clock $end
+$var wire 1 # reset $end
+$var wire 1 ! zero $end
+$var wire 1 $ regwrite $end
+$var wire 32 % instruction_code [31:0] $end
+$var wire 4 & alu_control [3:0] $end
+$scope module IFU_module $end
+$var wire 1 " clock $end
+$var wire 1 # reset $end
+$var wire 32 ' Instruction_Code [31:0] $end
+$var reg 32 ( PC [31:0] $end
+$scope module instr_mem $end
+$var wire 32 ) PC [31:0] $end
+$var wire 1 # reset $end
+$var wire 32 * Instruction_Code [31:0] $end
+$upscope $end
+$upscope $end
+$scope module control_module $end
+$var wire 3 + funct3 [2:0] $end
+$var wire 7 , funct7 [6:0] $end
+$var wire 7 - opcode [6:0] $end
+$var reg 4 . alu_control [3:0] $end
+$var reg 1 $ regwrite_control $end
+$upscope $end
+$scope module datapath_module $end
+$var wire 4 / alu_control [3:0] $end
+$var wire 1 " clock $end
+$var wire 5 0 read_reg_num1 [4:0] $end
+$var wire 5 1 read_reg_num2 [4:0] $end
+$var wire 1 $ regwrite $end
+$var wire 1 # reset $end
+$var wire 5 2 write_reg [4:0] $end
+$var wire 1 ! zero_flag $end
+$var wire 32 3 write_data [31:0] $end
+$var wire 32 4 read_data2 [31:0] $end
+$var wire 32 5 read_data1 [31:0] $end
+$scope module alu_module $end
+$var wire 4 6 alu_control [3:0] $end
+$var wire 32 7 in2 [31:0] $end
+$var wire 32 8 in1 [31:0] $end
+$var reg 32 9 alu_result [31:0] $end
+$var reg 1 ! zero_flag $end
+$upscope $end
+$scope module reg_file_module $end
+$var wire 1 " clock $end
+$var wire 32 : read_data1 [31:0] $end
+$var wire 32 ; read_data2 [31:0] $end
+$var wire 5 < read_reg_num1 [4:0] $end
+$var wire 5 = read_reg_num2 [4:0] $end
+$var wire 1 $ regwrite $end
+$var wire 1 # reset $end
+$var wire 32 > write_data [31:0] $end
+$var wire 5 ? write_reg [4:0] $end
+$var integer 32 @ i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 @
+b110 ?
+b10001 >
+b1001 =
+b1000 <
+b1001 ;
+b1000 :
+b10001 9
+b1000 8
+b1001 7
+b10 6
+b1000 5
+b1001 4
+b10001 3
+b110 2
+b1001 1
+b1000 0
+b10 /
+b10 .
+b110011 -
+b0 ,
+b0 +
+b100101000000001100110011 *
+b0 )
+b0 (
+b100101000000001100110011 '
+b10 &
+b100101000000001100110011 %
+1$
+1#
+0"
+0!
+$end
+#20
+1"
+#40
+0"
+#50
+0#
+#60
+b100 &
+b100 .
+b100 /
+b100 6
+b11111111111111111111111111111111 3
+b11111111111111111111111111111111 9
+b11111111111111111111111111111111 >
+b100000 ,
+b11001 4
+b11001 7
+b11001 ;
+b10011 1
+b10011 =
+b11000 5
+b11000 8
+b11000 :
+b10010 0
+b10010 <
+b111 2
+b111 ?
+b1000001001110010000001110110011 %
+b1000001001110010000001110110011 '
+b1000001001110010000001110110011 *
+b100 (
+b100 )
+1"
+#80
+0"
+#100
+b1 ,
+b100001 4
+b100001 7
+b100001 ;
+b10101 1
+b10101 =
+b100000 5
+b100000 8
+b100000 :
+b10100 0
+b10100 <
+b101 2
+b101 ?
+b11010110100000001010110011 %
+b11010110100000001010110011 '
+b11010110100000001010110011 *
+b1000 (
+b1000 )
+1"
+#120
+0"
+#140
+b1 3
+b1 9
+b1 >
+b111 &
+b111 .
+b111 /
+b111 6
+b0 ,
+b100011 4
+b100011 7
+b100011 ;
+b10111 1
+b10111 =
+b100010 5
+b100010 8
+b100010 :
+b10110 0
+b10110 <
+b100 +
+b11100 2
+b11100 ?
+b1011110110100111000110011 %
+b1011110110100111000110011 '
+b1011110110100111000110011 *
+b1100 (
+b1100 )
+1"
+#160
+0"
+#180
+1!
+b0 3
+b0 9
+b0 >
+b11 &
+b11 .
+b11 /
+b11 6
+b100101 4
+b100101 7
+b100101 ;
+b11001 1
+b11001 =
+b100100 5
+b100100 8
+b100100 :
+b11000 0
+b11000 <
+b1 +
+b11101 2
+b11101 ?
+b1100111000001111010110011 %
+b1100111000001111010110011 '
+b1100111000001111010110011 *
+b10000 (
+b10000 )
+1"
+#200
+0"
+#220
+b101 &
+b101 .
+b101 /
+b101 6
+b100111 4
+b100111 7
+b100111 ;
+b11011 1
+b11011 =
+b100110 5
+b100110 8
+b100110 :
+b11010 0
+b11010 <
+b101 +
+b11110 2
+b11110 ?
+b1101111010101111100110011 %
+b1101111010101111100110011 '
+b1101111010101111100110011 *
+b10100 (
+b10100 )
+1"
+#240
+0"
+#260
+0!
+b10010 3
+b10010 9
+b10010 >
+b0 &
+b0 .
+b0 /
+b0 6
+b10011 4
+b10011 7
+b10011 ;
+b1101 1
+b1101 =
+b10010 5
+b10010 8
+b10010 :
+b1100 0
+b1100 <
+b111 +
+b11111 2
+b11111 ?
+b110101100111111110110011 %
+b110101100111111110110011 '
+b110101100111111110110011 *
+b11000 (
+b11000 )
+1"
+#280
+0"
+#300
+b10101 3
+b10101 9
+b10101 >
+b1 &
+b1 .
+b1 /
+b1 6
+b10101 4
+b10101 7
+b10101 ;
+b1111 1
+b1111 =
+b10100 5
+b10100 8
+b10100 :
+b1110 0
+b1110 <
+b10001 2
+b10001 ?
+b110 +
+b111101110110100010110011 %
+b111101110110100010110011 '
+b111101110110100010110011 *
+b11100 (
+b11100 )
+1"
